@@ -1,0 +1,439 @@
+@media only screen and (min-width:1900px) {
+    body {
+        background: #1b1b1b;
+    }
+    h1, h2 {
+        margin: 0;
+    }
+    .conteiner {
+        margin: 0 auto;
+        width: 1127px;
+    }
+    header {
+        height: 923px;
+        background-image:url(../img/Items\ Here.svg),url(../img/Group\ 8.png);
+        background-position: 70% 183px,right;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    section.conteiner > div.logotip {
+        padding-top: 282px;
+    }
+
+    section.conteiner > div.header_content {
+        padding-top: 33px;
+        font-size: 18px;
+        line-height: 29px;
+        color:#FFFFFF;
+    }
+
+    main > section.first {
+        height: 3213px;
+        background: url(../img/Group\ 6.png), url(../img/Ellipse.png), white;
+        background-repeat: no-repeat;
+        background-position: -11px 652px ,-70px 804px;
+        margin-top: -84px;
+        position: relative;
+        z-index: -1;
+    }
+    section.first > div.conteiner > div  {
+        padding-top: 75px;
+
+    }
+    section.first > div.conteiner > div > h1 {
+        margin: 0;
+        margin-bottom: 18px;
+        font-size: 53px;
+        color: #333333;
+        
+    }
+
+    section.first > div.conteiner > div > p {
+        color: #333333;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: -1px;
+    }
+    section.first > div.conteiner > hr {
+        margin-top: 79px;
+        border: 1px solid #f2f2f2;
+    }
+
+    section.first > div.conteiner > div:nth-child(4) {
+        padding-top: 44px;
+    }
+    main > section.first > div.conteiner > div.content {
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+        margin-top: -34px;
+        padding-right: 23px;
+    }
+    main > section.first > div.conteiner > div.content > div:nth-child(2n+1) {
+        width: 44px;
+        height: 5px;
+        background: #FD3300;
+    }
+
+    main > section.first > div.conteiner > div.content > div:nth-child(2n) {
+        font-size: 38px;
+        margin-top: 6px;
+        margin-bottom: 72px;
+    }
+
+    main > section.first > div.conteiner > div.content > div:nth-child(6) {
+        direction: rtl;
+        padding-top: 6px;
+    }
+    main > section.first > div.conteiner > div.content2 {
+        margin-top: 721px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 230px 169px 892px;
+        grid-template-areas: 
+        "a  a  a"
+        "b1 b2 b3"
+        "c  c  c";
+    }
+
+    main > section.first > div.conteiner > div.content2 > div:nth-child(1) {
+        grid-area: a;
+    }
+
+    main > section.first > div.conteiner > div.content2 > div:nth-child(1) > h1 {
+        font-size: 50px;
+        margin-top: -5px;
+    }
+
+    main > section.first > div.conteiner > div.content2 > div:nth-child(1) > p {
+        font-size: 21px;
+        margin-top: 27px;
+    }
+
+    main > section.first > div.conteiner > div.content2 > div:nth-child(2) {
+        grid-area: b1;
+        background: no-repeat url(../img/gears.png) ;
+        background-size: auto;
+        background-position: 156px 0px;
+        text-align: center;
+        padding-top: 84px;
+        font-size: 21px;
+        padding-right: 6px;
+        line-height: 22px;
+    }
+    main > section.first > div.conteiner > div.content2 > div:nth-child(3) {
+        grid-area: b2;
+        background: no-repeat url(../img/f1.png) top;
+        background-size: auto;
+        text-align: center;
+        padding-top: 84px;
+        font-size: 21px;
+        padding-right: 37px;
+        line-height: 22px;
+    }
+    main > section.first > div.conteiner > div.content2 > div:nth-child(4) {
+        grid-area: b3;
+        background: no-repeat url(../img/dashboard.png) ;
+        background-position: 156px 15px;
+        background-size: auto;
+        text-align: center;padding-top: 84px;
+        font-size: 21px;
+        line-height: 22px;
+    }
+    main > section.first > div.conteiner > div.content2 > div:nth-child(5) {
+        grid-area: c;
+        background: no-repeat url(../img/2.png)  -6px;
+        background-size: auto;
+    }
+
+    main > section.secondary {
+        height: 906px;
+        background: url(../img/Group.png);
+        background-repeat: no-repeat;
+        background-position: 108px -1318px;
+        background-size: auto;
+    }
+
+    section.secondary > div.phone {
+        background: no-repeat url(../img/Phone.svg);
+        width: 594px;
+        height: 590px;
+        position: absolute;
+        left: calc(49% + 2px);
+        top: 4550px;
+    }
+
+    section.secondary > div {
+        width: 1130px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  305px 90px 375px;
+        grid-template-areas:
+        "a  a  a"
+        "b1 b2 b3"
+        "c  c  c";
+    }
+
+    section.secondary > div > div:nth-child(1) {
+        grid-area: a;
+    }
+
+    section.secondary > div > div:nth-child(1) > h1 {
+        font-size: 45px;
+        margin-top: 109px;
+        margin-bottom: 24px;
+        color: white;
+    }
+
+    section.secondary > div > div:nth-child(1) > span {
+        color: white;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    section.secondary > div > div:nth-child(2) {
+        grid-area: b1;
+        background: no-repeat url(../img/Arrow\ 2.svg);
+        background-position: 40% 0%;    
+    }
+
+    section.secondary > div > div:nth-child(2) > h1 {
+        margin-left: 53px;
+        margin-top: 25px;
+        font-size: 45px;
+        color: #FD351E;
+    }
+
+    section.secondary > div > div:nth-child(2) > span {
+        margin-left: 13%;
+        color: white;
+    }
+    section.secondary > div > div:nth-child(3) {
+        grid-area: b2;
+        background: no-repeat url(../img/Arrow\ 2.svg);
+        background-position: 47% 0;
+    }
+
+    section.secondary > div > div:nth-child(3) > h1 {
+        margin-left: 38%;
+        margin-top: 25px;
+        font-size: 45px;
+        color: #FD351E;
+    }
+
+    section.secondary > div > div:nth-child(3) > span {
+        margin-left: 20%;
+        color: white;
+    }
+
+    section.secondary > div > div:nth-child(4) {
+        grid-area: b3;
+        background: no-repeat url(../img/Arrow\ 2.svg);
+        background-position: 54% 0%;
+    }
+
+    section.secondary > div > div:nth-child(4) > h1 {
+        margin-left: 30%;
+        margin-top: 25px;
+        font-size: 45px;
+        color: #FD351E;
+    }
+
+    section.secondary > div > div:nth-child(4) > span {
+        margin-left: 25%;
+        color: white;
+    }
+
+    section.secondary > div > div:nth-child(5) {
+        grid-area: c;
+    }
+
+    section.secondary > div > div:nth-child(5) > h1 {
+        font-size: 45px;
+        margin-top: 190px;
+        margin-bottom: 23px;
+        color: white;
+    }
+
+    section.secondary > div > div:nth-child(5) > span {
+        color: white;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+
+    main > section.third{
+        height:735px;
+        background: white;
+    }
+
+    section.third > div {
+        width: 1130px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 119px 59px 37px 160px 258px; 
+        grid-template-areas:
+        "a  a"
+        "b  b"
+        "c  c"
+        "d  d"
+        "f1 f2" ;
+    }
+
+    section.third > div > div:nth-child(1) {
+        padding-top: 32px;
+        line-height: 21px;
+        grid-area: a;
+    }
+
+    section.third > div > div:nth-child(2) {
+        grid-area: b;
+
+    }
+
+    section.third > div > div:nth-child(2) > button {
+        background: no-repeat url(../img/Group\ 2.svg) -14px 0;
+        background-size: revert;
+        border: none;
+        cursor: pointer;
+        width: 239px;
+        height: 54px;
+    }
+
+    section.third > div > div:nth-child(3) {
+        padding-top: 26px;
+        grid-area: c;
+    }
+
+    section.third > div > div:nth-child(3) hr {
+        border: 1px solid rgba(0, 0, 0, 0.05);;
+    }
+
+
+    section.third > div > div:nth-child(4) {
+        grid-area: d;
+    }
+
+    section.third > div > div:nth-child(4) {
+        color: #333333;
+        padding-top: 65px;
+        font-size: 51px;
+        font-weight: 700;
+    }
+
+    section.third > div > div:nth-child(5) {
+        grid-area: f1;
+        background: no-repeat url(../img/Group\ 9.1.png);
+    }
+
+    section.third > div > div:nth-child(6) {
+        grid-area: f2;
+        background: no-repeat url(../img/Group\ 10.png)
+    }
+
+    footer > div.info {
+        display: grid;
+        width: 1130px;
+        margin: 0 auto;
+        padding-top: 64px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 63px 41px 43px 27px;
+        grid-template-areas: 
+        "a a1 a2 a3"
+        "b b1 a2 a3"
+        "b c1 a2 a3"
+        ". d1 a2 a3";
+    }
+
+    footer > div.info > div {
+        color: white;
+    }
+
+    footer > div.info > div:nth-child(1) > button {
+        background: url(../img/Group\ 2.svg) -14px 0;
+        background-size: revert;
+        width: 239px;
+        height: 54px;
+        margin-top: 4px;
+        border: none;
+        box-shadow: none;
+        cursor: pointer;
+        grid-area: a;
+    }
+
+    footer > div.info > div:nth-child(2) {
+        line-height: 22px;
+        padding-top: 21px;
+        grid-area: b;
+    }
+
+    footer > div.info > div:nth-child(3) {
+        background: no-repeat url(../img/telegram.png) 74px 4px;
+        grid-area: a1;
+        padding-left: 110px;
+        line-height: 21px;
+    }
+
+    footer > div.info > div:nth-child(4) {
+        background: no-repeat url(../img/viber.png) 75px 0;
+        grid-area: b1;
+        padding-left: 110px;
+    }
+
+    footer > div.info > div:nth-child(5) {
+        background: no-repeat url(../img/viber.png) 75px 0;
+        grid-area: c1;
+        padding-left: 110px;
+    }
+
+    footer > div.info > div:nth-child(6) {
+        background: no-repeat url(../img/Email.png) 75px 0;
+        grid-area: d1;
+        padding-left: 110px;
+    }
+
+    footer > div.info > div:nth-child(7) {
+        grid-area: a2;
+    }
+
+    footer > div.info > div:nth-child(7) > h4 {
+        margin: 0;
+        padding-left: 27%;
+        font-size: 20px;
+    }
+
+    footer > div.info > div:nth-child(7) > p:nth-child(2) {
+        margin: 0;
+        margin-top: 10px;
+        margin-left: 76px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    footer > div.info > div:nth-child(7) > p:nth-child(3) {
+        margin: 0;
+        margin-top: -3px;
+        margin-left: 76px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    footer > div.info > div:nth-child(8) > h4 {
+        margin: 0;
+        padding-left: 19%;
+        font-size: 20px;
+    }
+
+    footer > div.info > div:nth-child(8) > p {
+        margin: 0;
+        margin-top: 7px;
+        margin-left: 55px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
