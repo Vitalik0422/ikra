@@ -8,6 +8,11 @@ h1, h2 {
     margin: 0 auto;
     width: 1127px;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
 header {
     height: 923px;
     background-image:url(../img/Items\ Here.svg),url(../img/Group\ 8.png);
