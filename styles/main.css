@@ -580,7 +580,7 @@ footer > div.info > div:nth-child(8) > p {
         background: none;
         background-size: revert;
         grid-template-columns:1fr;
-        grid-auto-rows: 1fr 210px 210px 210px 210px;
+        grid-auto-rows: repeat(6, 1fr);
         grid-template-areas: 
         "txt"
         "img1"
@@ -902,8 +902,7 @@ footer > div.info > div:nth-child(8) > p {
     footer > div.info > div:nth-child(1) > button {
         background: linear-gradient(273.43deg, #5C9FF9 -16.34%, #0058DC 97.2%);
         background-size: revert;
-        width: 100%;
-        max-width: 700px;
+        width: 239px;
         height: 58px;
         margin-top: 4px;
         border: none;
