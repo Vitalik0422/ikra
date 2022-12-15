@@ -271,7 +271,7 @@ section.secondary > div > div:nth-child(2) > h1 {
     color: #FD351E;
 }
 
-section.secondary > div > div:nth-child(2) > span {
+section.secondary > div > div:nth-child(2) > p {
     margin-left: 13%;
     color: white;
 }
@@ -288,7 +288,7 @@ section.secondary > div > div:nth-child(3) > h1 {
     color: #FD351E;
 }
 
-section.secondary > div > div:nth-child(3) > span {
+section.secondary > div > div:nth-child(3) > p {
     margin-left: 20%;
     color: white;
 }
@@ -306,7 +306,7 @@ section.secondary > div > div:nth-child(4) > h1 {
     color: #FD351E;
 }
 
-section.secondary > div > div:nth-child(4) > span {
+section.secondary > div > div:nth-child(4) > p {
     margin-left: 25%;
     color: white;
 }
@@ -332,14 +332,15 @@ section.secondary > div > div:nth-child(5) > span {
 main > section.third{
     height:735px;
     background: white;
+    margin: 0 auto;
 }
 
 section.third > div {
     width: 1130px;
-    margin: 0 auto;
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 119px 59px 37px 160px 258px; 
+    grid-template-rows: 119px 59px 37px 160px 258px;
     grid-template-areas:
     "a  a"
     "b  b"
@@ -360,15 +361,25 @@ section.third > div > div:nth-child(2) {
 }
 
 section.third > div > div:nth-child(2) > button {
-    background: linear-gradient(273.43deg, #5C9FF9 -16.34%, #0058DC 97.2%);
+    background: no-repeat url(../img/Arrow\ 2\ \(2\).svg)  199px center, linear-gradient(273.43deg, #5C9FF9 -16.34%, #0058DC 97.2%);
     background-size: revert;
     border: none;
+    
     cursor: pointer;
+    margin-top: 4px;
     width: 239px;
     height: 54px;
     border-radius: 3px;
     color: white;
+    padding-left: 27px;
     text-align: start;
+    transition: all 200ms linear;
+}
+
+section.third > div > div:nth-child(2) > button:hover {
+    width: 245px;
+    height: 58px;
+    box-shadow: 1px 1px 8px 4px #3c86ef;
 }
 
 section.third > div > div:nth-child(3) {
@@ -391,12 +402,94 @@ section.third > div > div:nth-child(4) {
 
 section.third > div > div:nth-child(5) {
     grid-area: f1;
+    width: 542px;
+    border-radius: 3px;
     background: no-repeat url(../img/Group\ 9.1.png);
+    display: flex;
+    transition: all 400ms ease;
 }
 
-section.third > div > div:nth-child(6) {
+.mobillapp {
+    border-radius: 3px;
+    display: none;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease 1s;
+}
+
+.itunes {
+    width: 50%;
+    height: 100%;
+    background: no-repeat url(../img/icons8-google-play-240.png) center;
+    background-size: 50%;
+    display: block;
+    cursor: pointer;
+    transition: all 200ms ease 100ms;
+}
+
+.googleplay {
+    width: 50%;
+    height: 100%;
+    background: no-repeat url(../img/icons8-apple-app-store-240.png) center;
+    background-size: 50%;
+    display: block;
+    cursor: pointer;
+    transition: all 200ms ease 100ms;
+}
+
+section.third > div > div:nth-child(5):hover {
+    background: white;
+    box-shadow: 1px 1px 8px 3px #3c86ef;
+}
+
+
+section.third > div > div:nth-child(5):hover .mobillapp {
+    display: flex;
+}
+
+.googleplay:hover {
+    background-size: 60%;
+}
+
+.itunes:hover {
+    background-size: 60%;
+}
+
+section.third > div > a:nth-child(6) {
     grid-area: f2;
-    background: no-repeat url(../img/Group\ 10.png)
+    display: block;
+    width: 542px;
+    cursor: pointer;
+    background: no-repeat url(../img/Group\ 10.png);
+    transition: all 200ms linear;
+    border-radius: 3px;
+}
+
+
+
+section.third > div > a:nth-child(6):hover{
+    background: no-repeat url(../img/babystep.com.ua_.png);
+    background-size: cover;
+    width: 542px;
+    box-shadow: 1px 1px 8px 3px #3c86ef;
+    animation: backgoundpos 10s linear 200ms 1 alternate none;
+}
+
+@keyframes backgoundpos {
+    0% {
+        
+        background-position: auto;
+    }
+
+    50% {
+
+        background-position: 0 100%;
+    }
+
+    0% {
+        background-position: auto;
+    }
+
 }
 
 footer > div.info {
@@ -418,18 +511,27 @@ footer > div.info > div {
 }
 
 footer > div.info > div:nth-child(1) > button {
-    background: linear-gradient(273.43deg, #5C9FF9 -16.34%, #0058DC 97.2%);
+    background: no-repeat url(../img/Arrow\ 2\ \(2\).svg) 199px center, linear-gradient(273.43deg, #5C9FF9 -16.34%, #0058DC 97.2%);
     background-size: revert;
     width: 239px;
-    height: 58px;
-    margin-top: 4px;
+    height: 54px;
+    margin-top: 9px;
+    margin-left: 3px;
     border: none;
     border-radius: 3px;
     box-shadow: none;
     cursor: pointer;
+    padding-left: 27px;
     grid-area: a;
     text-align: start;
     color: white;
+    transition: all 200ms linear;
+}
+
+footer > div.info > div:nth-child(1) >  button:hover {
+    width: 245px;
+    height: 58px;
+    box-shadow: 1px 1px 8px 4px #3c86ef;
 }
 
 footer > div.info > div:nth-child(2) {
@@ -560,8 +662,8 @@ footer > div.info > div:nth-child(8) > p {
     header {
         height: 700px;
         background-image:url(../img/Items\ Here.svg);
-        background-position: 70% 1px;
-        background-size: contain;
+        background-position: 100% 1px;
+        background-size: 60%;
         background-repeat: no-repeat;
         position: relative;
         padding: 5px;
@@ -585,7 +687,7 @@ footer > div.info > div:nth-child(8) > p {
         background: none;
         background-size: revert;
         grid-template-columns:1fr;
-        grid-auto-rows: repeat(6, 1fr);
+        grid-template-rows: 200px repeat(4,1fr);
         grid-template-areas: 
         "txt"
         "img1"
@@ -606,7 +708,7 @@ footer > div.info > div:nth-child(8) > p {
 
     main > section.first >  div.conteiner > div.content >  div:nth-child(2) {
         grid-area: txt;
-        font-size: 20px;
+        font-size: 26px;
         direction: rtl;
     }
     
@@ -647,6 +749,7 @@ footer > div.info > div:nth-child(8) > p {
 
     main > section.first > div.conteiner > div.content2 {
         margin: 0;
+        text-align: center;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 200px 300px 1fr;
         grid-template-areas: 
@@ -703,14 +806,12 @@ footer > div.info > div:nth-child(8) > p {
         line-height: 22px;
     }
 
-    main > section.first > div.conteiner > div.content2 > div:nth-child(5) {
-        
-    }
 
     main > section.secondary {
-        height: 700px;
+        height: 100%;
         padding-right: 5px;
         padding-left: 5px;
+        margin-bottom: 50px;
     }
 
     section.secondary > div {
@@ -741,16 +842,17 @@ footer > div.info > div:nth-child(8) > p {
     section.secondary > div > div:nth-child(2) {
         grid-area: b1;
         background: no-repeat url(../img/Arrow\ 2.svg);
-        background-position: 40% 0%;    
+        background-position: center  0;    
     }
     
     section.secondary > div > div:nth-child(2) > h1 {
         margin: 14px auto;
+        text-align: center;
         font-size: 30px;
         color: #FD351E;
     }
     
-    section.secondary > div > div:nth-child(2) > span {
+    section.secondary > div > div:nth-child(2) > p {
         margin: 0;
         text-align: center;
         color: white;
@@ -758,7 +860,7 @@ footer > div.info > div:nth-child(8) > p {
     section.secondary > div > div:nth-child(3) {
         grid-area: b2;
         background: no-repeat url(../img/Arrow\ 2.svg);
-        background-position: 47% 0;
+        background-position: center  0; 
     }
     
     section.secondary > div > div:nth-child(3) > h1 {
@@ -768,7 +870,7 @@ footer > div.info > div:nth-child(8) > p {
         color: #FD351E;
     }
     
-    section.secondary > div > div:nth-child(3) > span {
+    section.secondary > div > div:nth-child(3) > p {
 
         color: white;
         margin: 0;
@@ -778,7 +880,7 @@ footer > div.info > div:nth-child(8) > p {
     section.secondary > div > div:nth-child(4) {
         grid-area: b3;
         background: no-repeat url(../img/Arrow\ 2.svg);
-        background-position: 54% 0%;
+        background-position: center  0; 
     }
     
     section.secondary > div > div:nth-child(4) > h1 {
@@ -788,7 +890,7 @@ footer > div.info > div:nth-child(8) > p {
         color: #FD351E;
     }
     
-    section.secondary > div > div:nth-child(4) > span {
+    section.secondary > div > div:nth-child(4) > p {
         margin: 0;
         text-align: center;
         color: white;
@@ -799,25 +901,31 @@ footer > div.info > div:nth-child(8) > p {
     }
 
     main > section.third{
-        height: 850px;
+        width: 100%;
         padding-right: 5px;
         padding-left: 5px;
+        padding-bottom: 10px;
     }
 
     section.third > div {
         width: 100%;
+        height: 100%;
         margin: 0 auto;
         display: grid;
         row-gap: 5px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr) 200px 200px; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr) 50%; 
         grid-template-areas:
-        "a"
-        "b"
-        "c"
-        "d"
-        "f1" 
-        "f2";
+        "a a"
+        "b b"
+        "c c"
+        "d d"
+        "f1 f2"; 
+    }
+
+    section.third > div {
+        width: 100%;
+        height: 100%;
     }
 
     section.third > div > div:nth-child(1) {
@@ -832,12 +940,8 @@ footer > div.info > div:nth-child(8) > p {
     }
     
     section.third > div > div:nth-child(2) > button {
-        background: linear-gradient(273.43deg, #5C9FF9 -16.34%, #0058DC 97.2%);
-        background-size: 110%;
         border: none;
         cursor: pointer;
-        width: 100%;
-        height: 58px;
     }
     
     section.third > div > div:nth-child(3) {
@@ -861,14 +965,16 @@ footer > div.info > div:nth-child(8) > p {
 
     section.third > div > div:nth-child(5) {
         grid-area: f1;
-        background: no-repeat url(../img/Group\ 9.1.png);
+        width: 100%;
         background-size: contain;
+        background-position: center;
     }
     
-    section.third > div > div:nth-child(6) {
+    section.third > div > a:nth-child(6) {
         grid-area: f2;
-        background: no-repeat url(../img/Group\ 10.png);
+        width: 100%;
         background-size: contain;
+        background-position: center;
     }
 
     footer {
@@ -905,17 +1011,16 @@ footer > div.info > div:nth-child(8) > p {
     }
     
     footer > div.info > div:nth-child(1) > button {
-        background: linear-gradient(273.43deg, #5C9FF9 -16.34%, #0058DC 97.2%);
+        background: no-repeat url(../img/Arrow\ 2\ \(2\).svg) 199px 22px, linear-gradient(273.43deg, #5C9FF9 -16.34%, #0058DC 97.2%);
         background-size: revert;
         width: 239px;
-        height: 58px;
+        height: 54px;
         margin-top: 4px;
         border: none;
         border-radius: 3px;
         box-shadow: none;
         cursor: pointer;
         text-align: start;
-        font-size: 20px;
         color: white;   
     }
     
@@ -997,5 +1102,114 @@ footer > div.info > div:nth-child(8) > p {
         margin-left: 0px;
         font-size: 16px;
         line-height: 22px;
+    }
+}
+
+@media  only screen and (max-width: 1000px) {
+    main > section.third {
+        height: auto;
+    }
+    section.third > div {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr) 430px 430px; 
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "f1"
+        "f2"; 
+    }
+}
+
+@media  only screen and (max-width: 800px) {
+    main > section.third {
+        height: auto;
+    }
+    section.third > div {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr) 370px 370px; 
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "f1"
+        "f2"; 
+    }
+}
+
+@media  only screen and (max-width: 700px) {
+    main > section.third {
+        height: auto;
+    }
+    section.third > div {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr) 350px 350px; 
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "f1"
+        "f2"; 
+    }
+}
+
+@media  only screen and (max-width: 600px) {
+    header {
+        background-size: 360px;
+    }
+
+    main > section.third {
+        height: auto;
+    }
+    section.third > div {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr) 330px 330px; 
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "f1"
+        "f2"; 
+    }
+
+    main > section.first >  div.conteiner > div.content >  div:nth-child(2) {
+
+        font-size: 22px;
+
+    }
+}
+@media  only screen and (max-width: 500px) {
+    main > section.third {
+        height: auto;
+    }
+    section.third > div {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr) 310px 310px; 
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "f1"
+        "f2"; 
     }
 }
