@@ -7,6 +7,7 @@ h1, h2 {
 .conteiner {
     margin: 0 auto;
     width: 1127px;
+    box-sizing: border-box;
 }
 
 a {
@@ -19,6 +20,7 @@ header {
     background-position: 70% 183px,right;
     background-repeat: no-repeat;
     position: relative;
+    box-sizing: border-box;
 }
 
 section.conteiner > div.logotip {
@@ -32,7 +34,12 @@ section.conteiner > div.header_content {
     color:#FFFFFF;
 }
 
+main {
+    box-sizing: border-box;
+}
+
 main > section.first {
+    box-sizing: border-box;
     height: 3213px;
     background:white;
     margin-top: -84px;
@@ -214,6 +221,7 @@ main > section.first > div.conteiner > div.content2 > div:nth-child(5) > img {
 
 main > section.secondary {
     height: 906px;
+    box-sizing: border-box;
     background: url(../img/Group.png);
     background-repeat: no-repeat;
     background-position: 108px -1318px;
@@ -333,6 +341,7 @@ main > section.third{
     height:735px;
     background: white;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 section.third > div {
@@ -493,6 +502,7 @@ section.third > div > a:nth-child(6):hover{
 }
 
 footer > div.info {
+    box-sizing: border-box;
     display: grid;
     width: 1130px;
     margin: 0 auto;
@@ -653,6 +663,7 @@ footer > div.info > div:nth-child(8) > p {
         color: grey;
     }
     main {
+        box-sizing: border-box;
         height: 100%;
     }
     .conteiner {
@@ -660,6 +671,7 @@ footer > div.info > div:nth-child(8) > p {
     }
 
     header {
+        box-sizing: border-box;
         height: 700px;
         background-image:url(../img/Items\ Here.svg);
         background-position: 100% 1px;
@@ -675,6 +687,8 @@ footer > div.info > div:nth-child(8) > p {
 
     main > section.first {
         height: auto;
+        margin: 0 auto;
+        box-sizing: border-box;
         padding-right: 5px;
         padding-left: 5px;
     }
@@ -812,10 +826,12 @@ footer > div.info > div:nth-child(8) > p {
         padding-right: 5px;
         padding-left: 5px;
         margin-bottom: 50px;
+        box-sizing: border-box;
     }
 
     section.secondary > div {
         width: 100%;
+        box-sizing: border-box;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
