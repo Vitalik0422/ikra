@@ -977,6 +977,10 @@ footer > div.info > div:nth-child(8) > p {
         background-position: center;
     }
 
+    section.third > div > a:nth-child(6):hover {
+        width: 100%;
+    }
+
     footer {
         padding-right: 5px;
         padding-left: 5px;
@@ -1189,9 +1193,7 @@ footer > div.info > div:nth-child(8) > p {
     }
 
     main > section.first >  div.conteiner > div.content >  div:nth-child(2) {
-
         font-size: 22px;
-
     }
 }
 @media  only screen and (max-width: 500px) {
